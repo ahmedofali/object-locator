@@ -9,9 +9,7 @@ module.exports = function getprop( obj , path ){
         return obj ;
     }
 
-    console.log( path ) ;
     path = path.split('.');
-    console.log( path ) ;
 
     return getprop( obj[path.shift()], path.join('.')) ;
 };

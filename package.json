@@ -4,7 +4,7 @@
   "description": "> For Educational purposes to learn how to create a node module from start to finish I have  Decided to follow Sindre in his commits to know how to create a node module .",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "license": "MIT",
   "keywords": [

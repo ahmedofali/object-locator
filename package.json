@@ -4,7 +4,9 @@
   "description": "> For Educational purposes to learn how to create a node module from start to finish I have  Decided to follow Sindre in his commits to know how to create a node module .",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "pretest": "node helpers/preTest.js",
+    "test": "node test",
+    "posttest": "node helpers/afterTest.js"
   },
   "license": "MIT",
   "keywords": [
@@ -16,11 +18,12 @@
     "locate",
     "get"
   ],
-  "files":[
+  "files": [
     "index.js"
   ],
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "0.0.4",
+    "chalk": "^2.0.1"
   },
   "author": "Ahmed Ali <dev.ahmed.abbas@gmail.com>",
   "repository": "ahmed32ali/object-locator"
